@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pranav's Food Alphabet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>Dinner time by Pranav Reddy Torti</h1>
+
+  <!-- Row of letters -->
+  <div class="row">
+    <div class="col-sm-2" style="background-color:lavender;">T</div>
+    <div class="col-sm-2" style="background-color:lavenderblush;">O</div>
+    <div class="col-sm-2" style="background-color:lavender;">R</div>
+    <div class="col-sm-2" style="background-color:lavenderblush;">T</div>
+    <div class="col-sm-2" style="background-color:lavender;">I</div>
+    <div class="col-sm-2" style="background-color:lavenderblush;">P</div>
+  </div>
+
+  <!-- Row of foods -->
+  <div class="row">
+    <div class="col-md" style="background-color:#e2f0d9;">Tacos</div>
+    <div class="col-md" style="background-color:#fff2cc;">Oatmeal</div>
+    <div class="col-md" style="background-color:#e2f0d9;">Rice</div>
+    <div class="col-md" style="background-color:#fff2cc;">Tofu</div>
+    <div class="col-md" style="background-color:#e2f0d9;">Ice Cream</div>
+    <div class="col-md" style="background-color:#fff2cc;">Pasta</div>
+  </div>
+
+  <hr>
+  <h4>Which row breaks first?</h4>
+  <p>
+    As the browser window is narrowed, the <strong>foods row (col-md)</strong> breaks first,
+    stacking vertically at the <strong>medium breakpoint (768px)</strong>. The
+    <strong>letters row (col-sm-2)</strong> stays horizontal longer and doesn't break until the
+    <strong>small breakpoint (576px)</strong>. This is because col-md columns only stay
+    side-by-side at md width and up, while col-sm-2 columns stay side-by-side at the lower
+    sm width and up, so col-md collapses to full width at a wider screen size than col-sm-2 does.
+  </p>
+</div>
+
+</body>
+</html>
