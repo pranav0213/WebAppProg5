@@ -11,9 +11,23 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
     integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-
 </head>
 <body>
+
+<!-- Part 8: navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light px-3">
+  <a class="navbar-brand" href="food.html">Food options</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link active" href="first.html">First</a></li>
+      <li class="nav-item"><a class="nav-link active" href="second.html">Second</a></li>
+    </ul>
+  </div>
+</nav>
 
 <div class="container">
   <h1>Dinner time by Pranav Reddy Torti</h1>
@@ -48,6 +62,130 @@
     side-by-side at md width and up, while col-sm-2 columns stay side-by-side at the lower
     sm width and up, so col-md collapses to full width at a wider screen size than col-sm-2 does.
   </p>
+
+  <!-- Part 4: images -->
+  <h2 class="mt-4">Responsive images</h2>
+  <div class="container">
+    <img src="images/tacos.png" class="img-fluid" alt="Tacos" width="450" height="450"
+     style="width:400px; height:400px; object-fit:cover;">
+    <img src="images/icecream.png" class="img-fluid" alt="Ice Cream" width="450" height="450"
+     style="width:400px; height:400px; object-fit:cover;">
+    <img src="images/pasta.png" class="img-fluid" alt="Pasta" width="450" height="450"
+     style="width:400px; height:400px; object-fit:cover;">
+  </div>
+
+  <h2 class="mt-4">Thumbnails</h2>
+  <div class="container">
+    <img src="images/tacos.png" class="img-thumbnail" alt="Tacos"
+     style="width:120px; height:120px; object-fit:cover;">
+    <img src="images/icecream.png" class="img-thumbnail" alt="Ice Cream" width="120" height="120"
+     style="width:120px; height:120px; object-fit:cover;">
+    <img src="images/pasta.png" class="img-thumbnail" alt="Pasta" width="120" height="120"
+     style="width:120px; height:120px; object-fit:cover;">
+  </div>
+
+  <!-- Part 5: table -->
+  <h2 class="mt-4">Table</h2>
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered align-middle">
+      <caption>Letters with a matching food, game, and song</caption>
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Letter</th><th scope="col">Food</th><th scope="col">Game</th><th scope="col">Song</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr><th scope="row">T</th><td>Tacos</td><td>Tetris</td><td>Thunderstruck</td></tr>
+      <tr><th scope="row">O</th><td>Oatmeal</td><td>Overcooked</td><td>Oops!... I Did It Again</td></tr>
+      <tr><th scope="row">R</th><td>Rice</td><td>Risk</td><td>Respect</td></tr>
+      <tr><th scope="row">T</th><td>Tofu</td><td>Tekken</td><td>Toxic</td></tr>
+      <tr><th scope="row">I</th><td>Ice Cream</td><td>Inside</td><td>Imagine</td></tr>
+      <tr><th scope="row">P</th><td>Pasta</td><td>Pong</td><td>Poker Face</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Part 6: buttons -->
+  <h2 class="mt-4">Button groups</h2>
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with letter button groups">
+    <div class="btn-group me-2" role="group" aria-label="Letters with images">
+      <button type="button" class="btn btn-success">T</button>
+      <button type="button" class="btn btn-success">I</button>
+      <button type="button" class="btn btn-success">P</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Warning group">
+      <button type="button" class="btn btn-warning">O</button>
+      <button type="button" class="btn btn-warning">R</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Danger group">
+      <button type="button" class="btn btn-danger">T</button>
+    </div>
+  </div>
+
+  <!-- Part 7: dropdown -->
+  <h2 class="mt-4">Dropdown</h2>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="pagesMenu"
+            data-bs-toggle="dropdown" aria-expanded="false">Pages</button>
+    <div class="dropdown-menu" aria-labelledby="pagesMenu">
+      <a class="dropdown-item" href="first.html">First</a>
+      <a class="dropdown-item" href="second.html">Second</a>
+    </div>
+  </div>
+
+  <!-- Part 9: form -->
+  <h2 class="mt-4">Form</h2>
+  <form>
+    <div class="form-group mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group mb-3">
+      <label for="food" class="form-label">FOOD</label>
+      <input type="text" class="form-control" id="food" placeholder="Enter your food">
+    </div>
+    <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="tour">
+      <label class="form-check-label" for="tour">Sign up for food tour information?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <!-- Bonus: cards -->
+  <h2 class="mt-4">Bonus: cards</h2>
+  <div class="row mb-5">
+    <div class="col-md-4 mb-3">
+      <div class="card">
+       <img src="images/tacos.png" class="card-img-top" alt="Tacos" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Tacos</h5>
+          <p class="card-text">A folded tortilla filled with meat, beans, veggies, and salsa.</p>
+          <a href="https://en.wikipedia.org/wiki/Taco" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img src="images/icecream.png" class="card-img-top" alt="Ice Cream" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Ice Cream</h5>
+          <p class="card-text">A frozen dessert made from cream, sugar, and flavorings.</p>
+          <a href="https://en.wikipedia.org/wiki/Ice_cream" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img src="images/pasta.png" class="card-img-top" alt="Pasta" style="height:200px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Pasta</h5>
+          <p class="card-text">Italian noodles made from wheat dough, served with many sauces.</p>
+          <a href="https://en.wikipedia.org/wiki/Pasta" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
